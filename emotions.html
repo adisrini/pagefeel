@@ -14,17 +14,15 @@
 			}
 
 			#overlay {
-				position: absolute;
-				top: 0px;
-				left: 0px;
+				position: fixed;
 				-o-transform : scaleX(-1);
 				-webkit-transform : scaleX(-1);
 				transform : scaleX(-1);
 				-ms-filter : fliph; /*IE*/
 				filter : fliph; /*IE*/
 
-				width : 600px;
-				height : 450px;
+				width : 150px;
+				height : 112px;
 			}
 
 			#videoel {
@@ -34,8 +32,9 @@
 				-ms-filter : fliph; /*IE*/
 				filter : fliph; /*IE*/
 
-				width : 600px;
-				height : 450px;
+        position: fixed;
+				width : 150px;
+				height : 112px;
 			}
 
 			#container {
@@ -132,6 +131,25 @@
 			<div id="controls">
 				<input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
 			</div>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+
 			<script>
 				var vid = document.getElementById('videoel');
 				var overlay = document.getElementById('overlay');
@@ -288,6 +306,7 @@
 
 				function updateData(data) {
 					// update
+          console.log(window.scrollY)
 					var rects = svg.selectAll("rect")
 						.data(data)
 						.attr("y", function(datum) { return height - y(datum.value); })
